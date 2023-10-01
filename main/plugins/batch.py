@@ -1,5 +1,5 @@
-#Tg:MaheshChauhan/DroneBots
-#Github.com/Vasusen-code
+#Tg:AkashSodh/OttWallaBots
+#Github.com/mxsport
 
 """
 Plugin for both public & private channels!
@@ -67,7 +67,7 @@ async def _batch(event):
             try:
                 value = int(_range.text)
                 if value > 100000:
-                    await conv.send_message("You can only get upto 100 files in a single batch.")
+                    await conv.send_message("You can only get upto 100000 files in a single batch.")
                     return conv.cancel()
             except ValueError:
                 await conv.send_message("Range must be an integer!")
