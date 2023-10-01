@@ -3,6 +3,7 @@
 import asyncio, time, os
 
 from .. import bot as Drone
+from .. import acc as acc
 from main.plugins.progress import progress_for_pyrogram
 
 from pyrogram import Client, filters
