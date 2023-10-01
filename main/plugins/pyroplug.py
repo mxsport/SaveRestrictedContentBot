@@ -3,7 +3,6 @@
 import asyncio, time, os
 
 from .. import bot as Drone
-from .. import acc as acc
 from main.plugins.progress import progress_for_pyrogram
 
 from pyrogram import Client, filters
@@ -98,8 +97,7 @@ async def get_msg(userbot, client, bot, sender, edit_id, msg_link, i):
                 height, width, duration = data["height"], data["width"], data["duration"]
                 print(f'd: {duration}, w: {width}, h:{height}')
                 try:
-                    with acc:
-                    thumb_path = acc.download_media(msg.video.thumbs[0].file_id)
+                    await screenshot(file, duration, sender)
                 except Exception:
                     thumb_path = None
                 await client.send_video(
