@@ -1,4 +1,4 @@
-#Github.com/Vasusen-code
+#Github.com/mxsports
 
 import time, os
 
