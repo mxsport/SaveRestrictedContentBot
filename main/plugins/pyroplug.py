@@ -97,7 +97,7 @@ async def get_msg(userbot, client, bot, sender, edit_id, msg_link, i):
                 height, width, duration = data["height"], data["width"], data["duration"]
                 print(f'd: {duration}, w: {width}, h:{height}')
                 try:
-                    thumb_path = await screenshot(video, duration, sender)
+                    thumb_path = await screenshot(file, duration, sender)
                 except Exception:
                     thumb_path = None
                 await client.send_video(
