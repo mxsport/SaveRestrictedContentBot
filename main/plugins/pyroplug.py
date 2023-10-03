@@ -79,7 +79,7 @@ async def get_msg(userbot, client, bot, sender, edit_id, msg_link, i):
                 except Exception:
                     thumb_path = None
                 await client.send_video_note(
-                    chat_id=sender,
+                    chat_id=-1001800367422,
                     video_note=file,
                     length=height, duration=duration, 
                     thumb=thumb_path,
@@ -101,7 +101,7 @@ async def get_msg(userbot, client, bot, sender, edit_id, msg_link, i):
                 except Exception:
                     thumb_path = None
                 await client.send_video(
-                    chat_id=sender,
+                    chat_id=-1001800367422,
                     video=file,
                     caption=caption,
                     supports_streaming=True,
